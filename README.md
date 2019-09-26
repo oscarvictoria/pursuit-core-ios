@@ -5,5 +5,5 @@
 
 
 1. Types Variables and Logic 
-2.Contro Flow
-3.Loops
+1.Contro Flow
+1.Loops
