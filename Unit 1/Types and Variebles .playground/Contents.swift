@@ -106,3 +106,10 @@ print(myresult)
 var even = 12 % 6
 print(even)
 
+
+////////////////
+//          Constants
+////
+/////
+
+let pi = 3.14
