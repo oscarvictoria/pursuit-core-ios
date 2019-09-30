@@ -1,11 +1,10 @@
 # pursuit-core-ios 
 
 
-## Unit 1 
+# Unit 1 
 
+## 1.Types Variables and Logic 
 
-1. Types Variables and Logic 
+## 2.Contro Flow
 
-2.Contro Flow
-
-3.Loops
+## 3.Loops
