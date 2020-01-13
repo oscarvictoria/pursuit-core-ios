@@ -10,18 +10,6 @@ import UIKit
 
 class SettingsVC: UITableViewController {
     
-//    enum UnitMesurements: String {
-//        case miles = "Miles"
-//        case kilometers = "Kilometers"
-//    }
-    
-//    enum Image: String {
-//        case bike = "bike"
-//        case run = "run"
-//    }
-    
-    
-
 @IBOutlet weak var theImage: UIImageView!
     
 @IBOutlet weak var unitMesurementsLabel: UILabel!
@@ -40,6 +28,7 @@ class SettingsVC: UITableViewController {
         didSet {
             theImage.image = UIImage(named: currentImage.rawValue)
             UserSettings.shared.updateImage(with: currentImage)
+           
         }
     }
     
@@ -54,6 +43,8 @@ class SettingsVC: UITableViewController {
         }
         if let image = UserSettings.shared.getImage() {
             currentImage = image
+            
+            
         }
     }
     
@@ -65,7 +56,6 @@ class SettingsVC: UITableViewController {
             // toggle unit mesurremnts lable
         case 1:
             toggleImage()
-            print("cell two was clicked")
         default:
             break
         }
@@ -77,6 +67,7 @@ class SettingsVC: UITableViewController {
     
     private func toggleImage() {
         currentImage = currentImage == Image.bike ? Image.run : Image.bike
+        
     }
 
 }
